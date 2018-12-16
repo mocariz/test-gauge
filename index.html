@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Avaliação Desenvolvedor Front-end">
+    <meta name="author" content="Monica Mota Ocariz">
+
+    <title>Avaliação Desenvolvedor Front-end</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./dist/css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">
+        Avaliação Prática 
+      </span>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <main role="main" class="col-md-12 col-sm-12 col-xs-12 px-4">
+          
+          <!-- Box Filtro -->
+          <div class="row pt-3 pb-2 mb-3">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <h1 class="h2">Dashboard</h1>
+            </div>
+            <div class="col-md-4 offset-md-4 col-sm-12 col-xs-12">
+              <div class="input-group">
+                <select class="custom-select" id="brands">
+                  <option selected>Selecione uma Marca ...</option>
+                </select>
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" onclick="search()">Filtrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gráfico -->
+          <canvas class="my-4 w-100" id="myChart" width="900" height="200"></canvas>
+
+          <!-- tabela de dados -->
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Usuário</th>
+                  <th class="text-center">Marca</th>
+                  <th class="text-center">Tipo</th>
+                  <th class="text-center">Texto</th>
+                </tr>
+              </thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./dist/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="./dist/js/bootstrap.min.js"></script>
+
+    <!-- Graphs -->
+    <script src="./dist/js/Chart.min.js"></script>
+    <script src="./dist/js/dashboard.js"></script>
+  </body>
+</html>
